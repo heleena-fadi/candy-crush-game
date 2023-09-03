@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 
 import {useEffect, useState} from 'react'
 import ScoreBoard from './components/ScoreBoard'
@@ -88,7 +89,7 @@ const App = () => {
     }
 
     const moveIntoSquareBelow = () => {
-        for (let i = 0; i <= 55; i++) {
+        for (let i = 0; i < 64 - width; i++) {
             const firstRow = [0, 1, 2, 3, 4, 5, 6, 7]
             const isFirstRow = firstRow.includes(i)
 
@@ -111,8 +112,8 @@ const App = () => {
         setSquareBeingReplaced(e.target)
     }
     const dragEnd = () => {
-        const squareBeingDraggedId = parseInt(squareBeingDragged.getAttribute('data-id'))
-        const squareBeingReplacedId = parseInt(squareBeingReplaced.getAttribute('data-id'))
+        const squareBeingDraggedId = parseInt(squareBeingDragged.getAttribute('data_id'))
+        const squareBeingReplacedId = parseInt(squareBeingReplaced.getAttribute('data_id'))
 
         currentColorArrangement[squareBeingReplacedId] = squareBeingDragged.getAttribute('src')
         currentColorArrangement[squareBeingDraggedId] = squareBeingReplaced.getAttribute('src')
@@ -178,7 +179,7 @@ const App = () => {
                         key={index}
                         src={candyColor}
                         alt={candyColor}
-                        data-id={index}
+                        data_id={index}
                         draggable={true}
                         onDragStart={dragStart}
                         onDragOver={(e) => e.preventDefault()}
