@@ -13,3 +13,25 @@
     width: 70px;
     height: 70px;
 }
+.container{
+    font-size: 15px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color:  rgb(221, 68, 162);
+}
+.score-board{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(221, 68, 162);
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+    
+}
