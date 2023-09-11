@@ -10,7 +10,7 @@ Welcome to the Candy Crush game built using React.js! This project showcases a s
 1. React.js
 2. CSS3
 ## Installation
- 1. Clone this repository: git clone https://github.com/heleena-fadi.
+ 1. Clone this repository: git clone [https://github.com/heleena-fadi](https://github.com/heleena-fadi/candy-crush-game).
 
 2. Navigate to the project directory: cd candy-crush-react.
 3. Install dependencies: npm install.
